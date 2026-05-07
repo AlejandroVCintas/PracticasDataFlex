@@ -1,4 +1,4 @@
-Use cWebView.pkg
+﻿Use cWebView.pkg
 Use cWebPanel.pkg
 Use cWebForm.pkg
 Use cWebButton.pkg
@@ -12,7 +12,73 @@ Use cWebList.pkg
 Use cWebColumn.pkg
 
 Object oDashboard is a cWebView
+     Set psCaption to "Dashboard"
+     Set pbShowCaption to False
+     Set psCSSClass to "Dashboard"
+        
+     Object oTilesGroup is a cWebGroup
+        Set piColumnCount to 5
+        Set pbShowBorder to False
+        Set pbShowCaption to False
+        Set psCSSClass to "TilesGroup"
 
+        // JUGADOR
+        
+        Object oTileJugador is a cWebHtmlBox
+            Set psCSSClass to "TileCard"
+            Set psHtml to '<div class="TileTitle">Jugador</div>'
+
+            Procedure OnClick
+                Send NavigatePath of oSelectJugador
+            End_Procedure
+        End_Object
+
+        // ENTRENADOR
+        
+        Object oTileEntrenador is a cWebHtmlBox
+            Set psCSSClass to "TileCard"
+            Set psHtml to '<div class="TileTitle">Entrenador</div>'
+
+            Procedure OnClick
+                Send NavigatePath of oSelectEntrenador
+            End_Procedure
+        End_Object
+
+        // POSICIÓN
+        
+        Object oTilePosicion is a cWebHtmlBox
+            Set psCSSClass to "TileCard"
+            Set psHtml to '<div class="TileTitle">Posición</div>'
+
+            Procedure OnClick
+                Send NavigatePath of oSelectPosicion
+            End_Procedure
+        End_Object
+
+        // EQUIPO
+        
+        Object oTileEquipo is a cWebHtmlBox
+            Set psCSSClass to "TileCard"
+            Set psHtml to '<div class="TileTitle">Equipo</div>'
+
+            Procedure OnClick
+                Send NavigatePath of oSelectEquipo
+            End_Procedure
+        End_Object
+
+        // LIGA
+        
+        Object oTileLiga is a cWebHtmlBox
+            Set psCSSClass to "TileCard"
+            Set psHtml to '<div class="TileTitle">Liga</div>'
+
+            Procedure OnClick
+                Send NavigatePath of oSelectLiga
+            End_Procedure
+        End_Object
+
+     End_Object
+    
     // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
     // Add a DDO Structure 
     //
@@ -27,13 +93,7 @@ Object oDashboard is a cWebView
     // constraints in the next view that we navigate to.
     // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
-    Set piMaxWidth to 1024
-    
-    Set psCaption to "Dashboard"
-    Set peViewType to vtUndefined
-    Set pbShowCaption to False
-    Set psCSSClass to "Dashboard"
-    
+    /*
     Object oWebMainPanel is a cWebPanel
         Set piColumnCount to 24
         
@@ -115,5 +175,6 @@ Object oDashboard is a cWebView
     Procedure OnBeforeShow
         // Each time this view is shown we will update the appropriate information.
     End_Procedure
-
+    */
+    
 End_Object
