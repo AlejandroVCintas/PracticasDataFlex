@@ -1,4 +1,4 @@
-Use cWebView.pkg
+﻿Use cWebView.pkg
 Use cWebPanel.pkg
 Use cWebForm.pkg
 Use cWebButton.pkg
@@ -12,6 +12,20 @@ Use cWebList.pkg
 Use cWebColumn.pkg
 
 Object oDashboard is a cWebView
+    
+     Set piColumnCount to 5
+
+     Object oTileJugador is a cWebPanel
+        Set psCSSClass to "TileCard"
+
+        Procedure OnClick
+            Send NavigatePath of oSelectJugador
+        End_Procedure
+
+        Object oLbl is a cWebLabel
+            Set psCaption to "Jugador"
+        End_Object
+     End_Object
 
     // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
     // Add a DDO Structure 
