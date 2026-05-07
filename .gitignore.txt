@@ -1,0 +1,24 @@
+# Compilados
+*.exe
+*.dll
+*.obj
+*.lib
+*.pdb
+*.bak
+
+# Temporales
+*.tmp
+*.log
+
+# Backups
+IdeSrc/Backup/
+
+# Configs locales
+Programs/*.cfg
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# VSCode
+.vscode/
