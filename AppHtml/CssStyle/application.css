@@ -1,0 +1,37 @@
+.TileCard {
+    width: 100%;
+    height: 140px;
+
+    border-radius: 16px;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.TileCard:hover {
+    transform: translateY(-5px);
+}
+
+.TileJugador {
+    background: linear-gradient(135deg, #ff512f, #dd2476);
+}
+
+.TileEntrenador {
+    background: linear-gradient(135deg, #1d976c, #93f9b9);
+}
+
+.TileEquipo {
+    background: linear-gradient(135deg, #396afc, #2948ff);
+}
+
+.TileLiga {
+    background: linear-gradient(135deg, #f7971e, #ffd200);
+}
+
+.TilePosicion {
+    background: linear-gradient(135deg, #8e2de2, #4a00e0);
+}

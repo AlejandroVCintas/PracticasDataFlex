@@ -49,7 +49,7 @@ Object oSelectEquipo is a cWebView
         Object oequipoNombre is a cWebColumn
             Entry_Item equipo.Nombre
             Set psCaption to "equipo.Nombre"
-            Set piWidth to 1201
+            Set piWidth to 180
         End_Object 
 
         Object oligaID is a cWebColumn
