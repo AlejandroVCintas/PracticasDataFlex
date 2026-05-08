@@ -25,7 +25,7 @@ Object oDashboard is a cWebView
         // JUGADOR
         
         Object oTileJugador is a cWebHtmlBox
-            Set psCSSClass to "TileCard"
+            Set psCSSClass to "TileCard TileJugador"
             Set psHtml to '<div class="TileContent"><div class="TileTitle">Jugador</div><div Class="TileIcon">🏃‍♂️‍🏫</div></div>'
 
             Procedure OnClick
@@ -36,7 +36,7 @@ Object oDashboard is a cWebView
         // ENTRENADOR
         
         Object oTileEntrenador is a cWebHtmlBox
-            Set psCSSClass to "TileCard"
+            Set psCSSClass to "TileCard TileEntrenador"
             Set psHtml to '<div class="TileContent"><div class="TileTitle">Entrenador</div><div Class="TileIcon">👨‍🦳</div></div>'
                 
             Procedure OnClick
@@ -47,7 +47,7 @@ Object oDashboard is a cWebView
         // POSICIÓN
         
         Object oTilePosicion is a cWebHtmlBox
-            Set psCSSClass to "TileCard"
+            Set psCSSClass to "TileCard TilePosicion"
             Set psHtml to '<div class="TileContent"><div class="TileTitle">Posiciones</div><div Class="TileIcon">📍‍🏫</div></div>'
 
             Procedure OnClick
@@ -58,7 +58,7 @@ Object oDashboard is a cWebView
         // EQUIPO
         
         Object oTileEquipo is a cWebHtmlBox
-            Set psCSSClass to "TileCard"
+            Set psCSSClass to "TileCard TileEquipo"
             Set psHtml to '<div class="TileContent"><div class="TileTitle">Equipo</div><div Class="TileIcon">⚽‍🏫</div></div>'
 
             Procedure OnClick
@@ -69,7 +69,7 @@ Object oDashboard is a cWebView
         // LIGA
         
         Object oTileLiga is a cWebHtmlBox
-            Set psCSSClass to "TileCard"
+            Set psCSSClass to "TileCard TileLiga"
             Set psHtml to '<div class="TileContent"><div class="TileTitle">Liga</div><div Class="TileIcon">🌍‍🏫</div></div>'
 
             Procedure OnClick

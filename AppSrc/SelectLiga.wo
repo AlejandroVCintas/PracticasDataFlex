@@ -44,13 +44,13 @@ Object oSelectLiga is a cWebView
         Object oligaNombre is a cWebColumn
             Entry_Item liga.Nombre
             Set psCaption to "liga.Nombre"
-            Set piWidth to 1000
+            Set piWidth to 180
         End_Object 
 
         Object oligaPais is a cWebColumn
             Entry_Item liga.Pais
             Set psCaption to "liga.Pais"
-            Set piWidth to 500
+            Set piWidth to 180
         End_Object 
 
         Object oligaEquipos is a cWebColumn
