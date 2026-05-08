@@ -26,7 +26,7 @@ Object oDashboard is a cWebView
         
         Object oTileJugador is a cWebHtmlBox
             Set psCSSClass to "TileCard"
-            Set psHtml to '<div class="TileTitle">Jugador</div>'
+            Set psHtml to '<div class="TileContent"><div class="TileTitle">Jugador</div><div Class="TileIcon">🏃‍♂️‍🏫</div></div>'
 
             Procedure OnClick
                 Send NavigatePath of oSelectJugador
@@ -37,8 +37,8 @@ Object oDashboard is a cWebView
         
         Object oTileEntrenador is a cWebHtmlBox
             Set psCSSClass to "TileCard"
-            Set psHtml to '<div class="TileTitle">Entrenador</div>'
-
+            Set psHtml to '<div class="TileContent"><div class="TileTitle">Entrenador</div><div Class="TileIcon">👨‍🦳</div></div>'
+                
             Procedure OnClick
                 Send NavigatePath of oSelectEntrenador
             End_Procedure
@@ -48,7 +48,7 @@ Object oDashboard is a cWebView
         
         Object oTilePosicion is a cWebHtmlBox
             Set psCSSClass to "TileCard"
-            Set psHtml to '<div class="TileTitle">Posición</div>'
+            Set psHtml to '<div class="TileContent"><div class="TileTitle">Posiciones</div><div Class="TileIcon">📍‍🏫</div></div>'
 
             Procedure OnClick
                 Send NavigatePath of oSelectPosicion
@@ -59,7 +59,7 @@ Object oDashboard is a cWebView
         
         Object oTileEquipo is a cWebHtmlBox
             Set psCSSClass to "TileCard"
-            Set psHtml to '<div class="TileTitle">Equipo</div>'
+            Set psHtml to '<div class="TileContent"><div class="TileTitle">Equipo</div><div Class="TileIcon">⚽‍🏫</div></div>'
 
             Procedure OnClick
                 Send NavigatePath of oSelectEquipo
@@ -70,7 +70,7 @@ Object oDashboard is a cWebView
         
         Object oTileLiga is a cWebHtmlBox
             Set psCSSClass to "TileCard"
-            Set psHtml to '<div class="TileTitle">Liga</div>'
+            Set psHtml to '<div class="TileContent"><div class="TileTitle">Liga</div><div Class="TileIcon">🌍‍🏫</div></div>'
 
             Procedure OnClick
                 Send NavigatePath of oSelectLiga
