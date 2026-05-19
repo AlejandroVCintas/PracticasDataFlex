@@ -7,6 +7,7 @@ Use cWebPanel.pkg
 Use cWebMenuGroup.pkg
 Use cWebMenuItem.pkg
 Use cWebForm.pkg
+Use SelectLiga.wo
 
 Use cligaDataDictionary.dd
 
@@ -18,6 +19,8 @@ Object oZoomLiga is a cWebView
     Set pbShowCaption to False
     Set Verify_Save_Msg to 0
     Set piMaxWidth to 1024
+    
+    WebRegisterPath ntNavigateForward oSelectLiga
 
     Object oliga_DD is a cligaDataDictionary
     End_Object 

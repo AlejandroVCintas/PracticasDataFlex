@@ -19,6 +19,8 @@ Object oSelectLiga is a cWebView
     Set piColumnCount to 12
     Set pbShowCaption to False
     Set piMaxWidth to 1024
+    
+    WebRegisterPath ntNavigateForward oZoomLiga
 
     Object oliga_DD is a cligaDataDictionary
     End_Object 
