@@ -9,6 +9,7 @@ Use cWebMenuItem.pkg
 Use cWebForm.pkg
 Use SelectJugador.wo
 Use SelectEquipo.wo
+Use SelectPosicion.wo
 Use WebNavigateTypes.pkg
 
 Use cligaDataDictionary.dd
@@ -26,6 +27,7 @@ Object oZoomJugador is a cWebView
 
     WebRegisterPath ntNavigateForward oSelectJugador
     WebRegisterPath ntNavigateForward oSelectEquipo
+    WebRegisterPath ntNavigateForward oSelectPosicion
 
     Object oliga_DD is a cligaDataDictionary
     End_Object
@@ -124,6 +126,20 @@ Object oZoomJugador is a cWebView
                 Send RefreshRecord
             End_Procedure
         End_Object
+        
+        Object oVerPosicionesBtn is a cWebMenuItem
+            Set psCaption to "Ver Posiciones"
+            Set psCSSClass to "WebButtonIcon WebIcon_ListBullet"
+
+            Procedure OnClick
+                Send NavigateForward of oSelectPosicion Self
+            End_Procedure
+
+            Procedure OnGetNavigateForwardData tWebNavigateData ByRef NavigateData Handle hoToView
+                Move True to NavigateData.bReadOnly
+            End_Procedure
+        End_Object
+        
     End_Object
 
     Procedure SetActionButtons
@@ -139,6 +155,7 @@ Object oZoomJugador is a cWebView
         WebSet pbRender of oSaveBtn to False
         WebSet pbRender of oCancelChangesBtn to False
         WebSet pbRender of oDeleteBtn to False
+        WebSet pbRender of oVerPosicionesBtn to True
 
         If (NavigateData.bReadOnly) Begin
             WebSet pbRender of oEditBtn to True
