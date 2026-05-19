@@ -1,24 +1,72 @@
-# Compilados
-*.exe
-*.dll
-*.obj
-*.lib
-*.pdb
+###############################
+# COMPILADOS / BINARIOS
+###############################
+Programs/
+Programs/*.exe
+Programs/*.dbg
+Programs/*.dep
+Programs/*.prn
+Programs/*.pdb
+Programs/*.map
+Programs/*.log
+
+###############################
+# ARCHIVOS GENERADOS POR DATAFLEX
+###############################
+AppSrc/*.dep
+AppSrc/*.prn
+AppSrc/*.cfg
+AppSrc/*.exe.manifest
+
+###############################
+# ARCHIVOS DE SESIÓN WEBAPP
+###############################
+Data/WebAppSession.*
+Data/webappsession.*
+Data/*.cch
+Data/*.hdr
+Data/*.tag
+
+###############################
+# ARCHIVOS DE BASE DE DATOS EMBEDDED
+###############################
+Data/*.k1
+Data/*.k2
+Data/*.k3
+Data/*.dat
+Data/*.vld
+
+###############################
+# BACKUPS AUTOMÁTICOS
+###############################
+IdeSrc/Backup/
+*.old
 *.bak
 
-# Temporales
-*.tmp
-*.log
+###############################
+# CONFIGURACIONES LOCALES
+###############################
+*.ini
+*.ws
+IdeSrc/*.dsk
+IdeSrc/*.mtd
 
-# Backups
-IdeSrc/Backup/
-
-# Configs locales
-Programs/*.cfg
-
-# Windows
+###############################
+# ARCHIVOS DEL SISTEMA
+###############################
 Thumbs.db
 Desktop.ini
 
-# VSCode
+###############################
+# VISUAL STUDIO CODE
+###############################
 .vscode/
+
+###############################
+# OTROS EDITORES
+###############################
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates

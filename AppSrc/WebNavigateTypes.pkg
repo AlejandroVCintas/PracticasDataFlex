@@ -1,0 +1,7 @@
+// WebNavigateTypes.pkg
+// Compatibilidad con proyectos antiguos del Web Framework
+
+Define nfUndefined  for 0
+Define nfFromMain   for 1
+Define nfFromParent for 2
+Define nfFromChild  for 3
