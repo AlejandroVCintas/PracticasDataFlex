@@ -26,11 +26,14 @@ Object oZoomLiga is a cWebView
 
     Object oliga_DD is a cligaDataDictionary
     End_Object 
+    
+    Object oequipo_DD is a cequipoDataDictionary
+        Set DDO_Server to oliga_DD   
+    End_Object
 
     Set Main_DD To oliga_DD
-    Set Server  To oliga_DD
-
-
+    Set Server  to oliga_DD
+    
     Object oWebMainPanel is a cWebPanel
         Set piColumnCount to 12
         WebSetResponsive piColumnCount rmMobile to 4
@@ -73,7 +76,34 @@ Object oZoomLiga is a cWebView
             Set piColumnIndex to 0
             Set peLabelPosition to lpTop
             Set psLabel to "EquiposMax"
-        End_Object 
+        End_Object
+        
+        Object oSpacer is a cWebSpacer
+            Set piColumnSpan to 12
+            Set piColumnIndex to 0
+        End_Object
+        
+        Object oListaEquipos is a cWebList
+            Set piColumnSpan to 12
+            Set piColumnIndex to 0
+            Set psCaption to "Equipos de la Liga"
+            Set pbShowHeader to True
+            Set pbFillHeight to True
+
+        Object oColID is a cWebColumn
+            Entry_Item equipo.ID
+            Set psCaption to "ID"
+            Set piWidth to 50
+        End_Object
+
+        Object oColNombre is a cWebColumn
+            Entry_Item equipo.Nombre
+            Set psCaption to "Nombre"
+        End_Object
+        
+        End_Object
+        
+        Set Server of oListaEquipos to oequipo_DD
     End_Object 
 
     Object oActionGroup is a cWebMenuGroup
