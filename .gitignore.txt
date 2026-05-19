@@ -1,6 +1,7 @@
 ###############################
 # COMPILADOS / BINARIOS
 ###############################
+Programs/
 Programs/*.exe
 Programs/*.dbg
 Programs/*.dep
@@ -23,6 +24,8 @@ AppSrc/*.exe.manifest
 Data/WebAppSession.*
 Data/webappsession.*
 Data/*.cch
+Data/*.hdr
+Data/*.tag
 
 ###############################
 # ARCHIVOS DE BASE DE DATOS EMBEDDED
@@ -32,8 +35,6 @@ Data/*.k2
 Data/*.k3
 Data/*.dat
 Data/*.vld
-Data/*.hdr
-Data/*.tag
 
 ###############################
 # BACKUPS AUTOMÁTICOS
