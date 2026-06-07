@@ -11,6 +11,7 @@ Use SelectLiga.wo
 Use SelectEquipo.wo
 
 Use cligaDataDictionary.dd
+Set Server of oListaEquipos to oequipo_DD
 
 Object oZoomLiga is a cWebView
     Set piColumnCount to 12
@@ -104,8 +105,6 @@ Object oZoomLiga is a cWebView
         End_Object
         
     End_Object 
-    
-    Set Server of oListaEquipos to oequipo_DD
 
     Object oActionGroup is a cWebMenuGroup
 
