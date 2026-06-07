@@ -20,7 +20,12 @@ Class cequipoDataDictionary is a DataDictionary
         Set Foreign_Field_Option DD_KEYFIELD DD_FINDREQ to True
         Set Foreign_Field_Option DD_INDEXFIELD DD_NOPUT to True
         Set Foreign_Field_Option DD_DEFAULT DD_DISPLAYONLY to True
-
+    
+    End_Procedure
+    
+    Procedure OnConstrain
+        Forward Send OnConstrain
+        Constrain equipo.LigaID eq liga.ID
     End_Procedure
 
 End_Class
